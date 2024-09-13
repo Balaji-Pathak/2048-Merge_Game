@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(59, 57, 57);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .Grid_Box {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding: 10px;
+    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(4, 100px);
+  }
+  .box1 {
+    background-color: rgb(78, 78, 219);
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+  .box1:hover {
+    background-color: #b76d49;
+  }
+  .box2 {
+    background-color: rgb(78, 78, 219);
+    border: 2px solid rgb(0, 0, 0);
+    height: 100px; width: 100px;
+    border-radius: 20px;
+    position: relative;
+    left: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: grab;
+    font-weight: 700;
+
+  }
+  .box2:hover {
+    background-color: #b77549;
+  }
+  .GameOverDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgb(37, 35, 35) ;
+  } 
+  .p{
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(242, 208, 208);
+    position: absolute;
+    top:40%;
+    left: 40%;
+  }
+  .restartButton{
+    position: absolute;
+    top:50% ;
+    left: 45%;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #df7111;
+    border-radius:6px;
+  }
+  .helpDiv{
+    position:relative;
+    top: -100px;
+    width:160px ;
+    background-color: rgb(78, 78, 219);
+    border: 2px solid rgb(0, 0, 0);
+    height: 100px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;justify-content: center; align-items: center;
+  }
+  .scorediv
+    {
+      height: 100px; width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      left: 115px;
+      background-color: #d4670f;
+      border: 5px solid rgb(97, 87, 63);
+      border-radius: 23px;
+      font-size: 30px;
+      font-weight: bolder;
+    }
